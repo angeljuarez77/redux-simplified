@@ -13,7 +13,7 @@ function Number(props) {
 function mapStateToProps(state) {
   return {
     number: state.number,
-    timesCalled: state.timesCalled
+    // timesCalled: state.timesCalled
   };
 }
 

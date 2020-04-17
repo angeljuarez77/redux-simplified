@@ -8,7 +8,7 @@ import {
 
 const initState = {
   number: 0,
-  timesCalled: "fucking balls",
+  timesCalled: "hello I am another change again",
 };
 
 export default function mathReducers(state = initState, action) {
