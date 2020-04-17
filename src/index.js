@@ -5,9 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import rootReducer from './reducers/index.js';
+// import rootReducer from './reducers/index.js';
+import mathReducers from './reducers/mathReducers.js';
 
-const store = createStore(rootReducer);
+const store = createStore(mathReducers);
 
 ReactDOM.render(
   <Provider store={ store }>

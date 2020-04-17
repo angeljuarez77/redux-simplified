@@ -3,6 +3,7 @@ export const ADD_NUMBER = "ADD_NUMBER";
 export const SUBTRACT_NUMBER = "SUBTRACT_NUMBER";
 export const MULTIPLY_NUMBER = "MULTIPLY_NUMBER";
 export const DIVIDE_NUMBER = "DIVIDE_NUMBER";
+export const HARDCODED_ADD_12 = "HARDCODED_ADD_12";
 
 // Now we have our Action Creators.
 export function addNumber(number) {
@@ -31,4 +32,8 @@ export function divideNumber(number) {
     type: DIVIDE_NUMBER,
     number
   }
+}
+
+export function hardcodedAdd12() {
+  return { type: HARDCODED_ADD_12 }
 }

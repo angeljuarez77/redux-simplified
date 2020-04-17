@@ -3,11 +3,12 @@ import {
   SUBTRACT_NUMBER,
   MULTIPLY_NUMBER,
   DIVIDE_NUMBER,
+  HARDCODED_ADD_12,
 } from '../actions/index.js';
 
 const initState = {
   number: 0,
-  timesCalled: 0,
+  timesCalled: "fucking balls",
 };
 
 export default function mathReducers(state = initState, action) {
@@ -28,6 +29,8 @@ export default function mathReducers(state = initState, action) {
       return Object.assign({}, state, {
         number: state.number / action.number
       })
+    case HARDCODED_ADD_12:
+      return {...state, number: state.number + 12}
     default:
       return state
   }

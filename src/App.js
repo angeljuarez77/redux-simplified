@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import MathAddition from './components/MathAddition';
-import Number from './components/Number';
+import Number from './components/Number.js';
 
 class App extends React.Component {
   render() {

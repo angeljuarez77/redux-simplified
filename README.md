@@ -106,6 +106,16 @@ ReactDOM.render(
 The connect function will allow us to pass the information from our store as props to our components.
 It will also pass in our action dispatchers as props to our components
 ```javascript
+import React from 'react';
 
+function Lists(props) {
+  return (
+    <div>
+      <h3>Hello I am a component and my name is props.name</h3>
+    </div>
+  )
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Lists)
 ```
 </details>
